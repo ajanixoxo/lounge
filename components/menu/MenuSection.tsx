@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MenuSection as MenuSectionType } from '@/types/menu';
 import { CollapsibleCategory } from './CollapsibleCategory';
@@ -32,21 +32,27 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ section }) => {
     return 'Other';
   };
 
+  const groups = ['All', 'Drinks', 'Food'];
+  if (section.title === 'Lounge') groups.push('Shisha');
+
   const filteredCategories = selectedGroup === 'All' 
     ? section.categories 
     : section.categories.filter(cat => getGroup(cat.title) === selectedGroup);
 
-  // Set the first category as open by default when group changes
-  useEffect(() => {
-    if (filteredCategories.length > 0) {
-      setOpenCategoryTitle(filteredCategories[0].title);
+  const handleGroupChange = (group: string) => {
+    setSelectedGroup(group);
+    
+    // Calculate what the filtered categories WILL be after this state update
+    const nextFiltered = group === 'All' 
+      ? section.categories 
+      : section.categories.filter(cat => getGroup(cat.title) === group);
+      
+    if (nextFiltered.length > 0) {
+      setOpenCategoryTitle(nextFiltered[0].title);
     } else {
       setOpenCategoryTitle(null);
     }
-  }, [selectedGroup]);
-
-  const groups = ['All', 'Drinks', 'Food'];
-  if (section.title === 'Lounge') groups.push('Shisha');
+  };
 
   return (
     <section className="pt-[68px] pb-16 px-6 md:px-24 max-w-7xl mx-auto relative overflow-hidden">
@@ -75,7 +81,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ section }) => {
         {groups.map((group) => (
           <button
             key={group}
-            onClick={() => setSelectedGroup(group)}
+            onClick={() => handleGroupChange(group)}
             className="relative py-6 text-[10px] uppercase tracking-[0.4em] transition-all duration-500 group"
           >
             <span className={`relative z-10 transition-colors duration-500 ${selectedGroup === group ? 'text-rixos-gold' : 'text-white/30 group-hover:text-white'}`}>

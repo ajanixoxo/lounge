@@ -1,14 +1,16 @@
 "use client"
 
-import * as React from 'react';
-import { motion, useScroll, useSpring } from 'motion/react';
+import React, { useState, useEffect } from 'react';
+import { motion, useScroll, useSpring, AnimatePresence } from 'motion/react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/layout/Hero';
 import { MenuSection } from '@/components/menu/MenuSection';
 import { Footer } from '@/components/layout/Footer';
+import { Intro } from '@/components/layout/Intro';
 import { RESTAURANT_MENU } from '@/data/menu';
 
 export default function RestaurantPage() {
+  const [showIntro, setShowIntro] = useState(true);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -16,10 +18,19 @@ export default function RestaurantPage() {
     restDelta: 0.001
   });
 
+  useEffect(() => {
+    const timer = setTimeout(() => setShowIntro(false), 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-rixos-black selection:bg-rixos-gold/30">
       <div className="grain" />
       
+      <AnimatePresence>
+        {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
+      </AnimatePresence>
+
       {/* Progress Bar */}
       <motion.div 
         className="fixed top-0 left-0 right-0 h-[2px] bg-rixos-gold z-70 origin-left" 
