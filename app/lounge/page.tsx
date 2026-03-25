@@ -1,21 +1,18 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
  motion,
  useScroll,
  useSpring,
- AnimatePresence,
 } from 'motion/react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/layout/Hero';
 import { MenuSection } from '@/components/menu/MenuSection';
 import { Footer } from '@/components/layout/Footer';
-import { Intro } from '@/components/layout/Intro';
 import { LOUNGE_MENU } from '@/data/menu';
 
 export default function LoungePage() {
- const [showIntro, setShowIntro] = useState(true);
  const { scrollYProgress } = useScroll();
  const scaleX = useSpring(scrollYProgress, {
   stiffness: 100,
@@ -23,18 +20,9 @@ export default function LoungePage() {
   restDelta: 0.001,
  });
 
- useEffect(() => {
-  const timer = setTimeout(() => setShowIntro(false), 2500);
-  return () => clearTimeout(timer);
- }, []);
-
  return (
   <div className="relative min-h-screen bg-rixos-black selection:bg-rixos-gold/30">
    <div className="grain" />
-
-   <AnimatePresence>
-    {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
-   </AnimatePresence>
 
    {/* Progress Bar */}
    <motion.div
