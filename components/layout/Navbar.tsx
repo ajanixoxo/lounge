@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll } from 'motion/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export const Navbar: React.FC = () => {
@@ -26,9 +27,18 @@ export const Navbar: React.FC = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="text-xl font-serif tracking-widest text-white"
+        className="flex items-center"
       >
-        <Link href="/">RIXOS</Link>
+        <Link href="/">
+          <Image 
+            src="/logo.png" 
+            alt="RIXOS Logo" 
+            width={120} 
+            height={40} 
+            className="h-8 md:h-10 w-auto object-contain"
+            priority
+          />
+        </Link>
       </motion.div>
       
       <div className="flex space-x-6">
