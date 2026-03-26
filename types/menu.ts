@@ -1,16 +1,17 @@
 export interface MenuItem {
-  id: string;
-  name: string;
-  price: string;
-  description: string;
+ id: string;
+ name: string;
+ price: string;
+ description: string;
 }
 
 export interface MenuCategory {
-  title: string;
-  items: MenuItem[];
+ title: string;
+ items: MenuItem[];
 }
 
 export interface MenuSection {
-  title: string;
-  categories: MenuCategory[];
+ title: string;
+ backgroundTitle: string;
+ categories: MenuCategory[];
 }
