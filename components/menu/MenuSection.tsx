@@ -33,27 +33,24 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
   'Smoothies',
  ];
  const FOOD_TITLES = [
-  "Rice (Lounge)",
-  "Pasta & Noodles",
-  "Soups",
-  "Swallows",
-  "Protein & Grills",
-  "Starters",
-  "Starters / Finger Chops",
-  "Pepper Soups",
-  "Salads",
-  "Main / Pasta / Rice",
-  "Main Dishes - Rice",
-  "Main Dishes - Pasta",
-  "Steakhouse Selection",
-  "Steak house Selection",
-  "Grill & Exotic",
-  "Exotic Monster Grills",
-  "Classic BBQ Spot - Chicken",
-  "Classic BBQ Spot - Turkey",
-  "Seafood",
-  "Platters",
-  "Desserts",
+  'Rice',
+  'Pasta & Noodles',
+  'Soups',
+  'Swallows',
+  'Protein Bites',
+  'Grills',
+  'Sharwama',
+  'Starters / Finger Chops',
+  'Pepper Soups',
+  'Salads',
+  'Main Dishes - Rice',
+  'Main Dishes - Pasta',
+  'Steak house Selection',
+  'Classic BBQ Spot - Chicken',
+  'Classic BBQ Spot - Turkey',
+  'Seafood',
+  'Platters',
+  'Desserts',
  ];
  const SHISHA_TITLES = ['Shisha'];
 
@@ -97,7 +94,12 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
    {/* Watermark */}
    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none opacity-[0.02] select-none">
     <div className="w-[80vw] h-[40vh] relative opacity-[0.03]">
-     <Image src="/logo.png" alt="RIXOS" fill className="object-contain" />
+     <Image
+      src="/logo.png"
+      alt="RIXOS"
+      fill
+      className="object-contain"
+     />
     </div>
    </div>
 
@@ -122,7 +124,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
      <button
       key={group}
       onClick={() => handleGroupChange(group)}
-      className="relative py-6 text-[10px] uppercase tracking-[0.4em] transition-all duration-500 group"
+      className="relative py-6 text-[12px] uppercase tracking-[0.4em] transition-all duration-500 group"
      >
       <span
        className={`relative z-10 transition-colors duration-500 ${selectedGroup === group ? 'text-rixos-gold' : 'text-white/30 group-hover:text-white'}`}

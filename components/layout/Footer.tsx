@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
        className="opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
        aria-label="Follow us on Instagram"
       >
-       <Instagram size={20} />
+       <Instagram size={21} />
       </a>
       <a
        href="https://wa.me/message/R3UL7H26XEG4I1"
