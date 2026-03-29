@@ -25,12 +25,17 @@ export const Footer: React.FC = () => {
       unforgettable experience of luxury and taste.
      </p>
      <div className="flex space-x-6">
-      <Instagram
-       size={20}
-       className="opacity-40 hover:opacity-100 cursor-pointer transition-opacity"
-      />
       <a
-       href="https://wa.me/2340000000000"
+       href="https://www.instagram.com/rixosclubandlounge?igsh=MWJhZmxsMGMyejM2NA%3D%3D&utm_source=qr"
+       target="_blank"
+       rel="noopener noreferrer"
+       className="opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
+       aria-label="Follow us on Instagram"
+      >
+       <Instagram size={20} />
+      </a>
+      <a
+       href="https://wa.me/message/R3UL7H26XEG4I1"
        target="_blank"
        rel="noopener noreferrer"
        className="opacity-40 hover:opacity-100 cursor-pointer transition-opacity text-white"
@@ -67,9 +72,16 @@ export const Footer: React.FC = () => {
       Akala Exp Road, <br />
       Ibadan
      </p>
-     <button className="text-[10px] uppercase tracking-widest border border-white/20 px-6 py-3 rounded-full hover:bg-white hover:text-rixos-black transition-all">
-      Get Directions
-     </button>
+     <a
+      href="https://maps.app.goo.gl/BwhEJN4XpxDfGgZF7?g_st=iwb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block"
+     >
+      <button className="text-[10px] uppercase tracking-widest border border-white/20 px-6 py-3 rounded-full hover:bg-white hover:text-rixos-black transition-all">
+       Get Directions
+      </button>
+     </a>
     </div>
    </div>
 
