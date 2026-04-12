@@ -388,20 +388,20 @@ export const LOUNGE_MENU: MenuSection = {
    items: [
     {
      id: 'l-b1',
-     name: 'Heineken',
-     price: '2,500',
+     name: 'Heineken Jar x2',
+     price: '5,000',
      description: 'Crisp lager with clean finish',
     },
     {
      id: 'l-b2',
-     name: 'Budweiser',
-     price: '2,500',
+     name: 'Budweiser Jar x2',
+     price: '5,000',
      description: 'Smooth refreshing lager',
     },
     {
      id: 'l-b3',
-     name: 'Desperados',
-     price: '2,000',
+     name: 'Desperados Jar x2',
+     price: '4,000',
      description: 'Beer infused with tequila flavor',
     },
     {
@@ -412,20 +412,20 @@ export const LOUNGE_MENU: MenuSection = {
     },
     {
      id: 'l-b5',
-     name: 'Orijin Beer',
-     price: '2,000',
+     name: 'Orijin Beer Jar x2',
+     price: '4,000',
      description: 'Herbal beer with unique taste',
     },
     {
      id: 'l-b6',
-     name: 'Guinness Smooth',
-     price: '2,000',
+     name: 'Guinness Smooth Jar x2',
+     price: '4,000',
      description: 'Creamy stout with rich flavor',
     },
     {
      id: 'l-b7',
-     name: 'Guinness Smooth Big',
-     price: '3,000',
+     name: 'Guinness Smooth Big Jar x2',
+     price: '6,000',
      description: 'Creamy stout with rich flavor',
     },
     {
@@ -434,19 +434,19 @@ export const LOUNGE_MENU: MenuSection = {
      price: '2,000',
      description: 'Herbal bitters with sharp finish',
     },
-    {
-     id: 'l-b9',
-     name: 'Trophy',
-     price: '2,500',
-     description: 'Light lager beer with a smooth, refreshing taste',
-    },
-    {
-     id: 'l-b10',
-     name: 'Goldberg',
-     price: '2,500',
-     description:
-      'Strong lager beer with a bold, slightly bitter finish',
-    },
+    // {
+    //  id: 'l-b9',
+    //  name: 'Trophy',
+    //  price: '2,500',
+    //  description: 'Light lager beer with a smooth, refreshing taste',
+    // },
+    // {
+    //  id: 'l-b10',
+    //  name: 'Goldberg',
+    //  price: '2,500',
+    //  description:
+    //   'Strong lager beer with a bold, slightly bitter finish',
+    // },
    ],
   },
   {
