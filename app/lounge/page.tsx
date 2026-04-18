@@ -10,7 +10,9 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/layout/Hero';
 import { MenuSection } from '@/components/menu/MenuSection';
 import { Footer } from '@/components/layout/Footer';
-import { LOUNGE_MENU } from '@/data/menu';
+import menuData from '@/data/menu.json';
+
+const LOUNGE_MENU = menuData.lounge;
 
 export default function LoungePage() {
  const { scrollYProgress } = useScroll();
