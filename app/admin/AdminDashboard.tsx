@@ -79,14 +79,16 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
             <p className="text-white/60">Edit menu items, preview locally, and push to Git</p>
           </div>
           <div className="flex gap-3">
-             <button
-              onClick={saveLocally}
-              disabled={isSavingLocal || isDeploying}
-              className="flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded hover:bg-white/20 transition-colors disabled:opacity-50 font-medium"
-            >
-              <Save size={18} />
-              {isSavingLocal ? "Saving..." : "Save Locally"}
-            </button>
+            {process.env.NODE_ENV === "development" && (
+              <button
+                onClick={saveLocally}
+                disabled={isSavingLocal || isDeploying}
+                className="flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded hover:bg-white/20 transition-colors disabled:opacity-50 font-medium"
+              >
+                <Save size={18} />
+                {isSavingLocal ? "Saving..." : "Save Locally"}
+              </button>
+            )}
 
             <button
               onClick={publishToGithub}
@@ -94,7 +96,7 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
               className="flex items-center gap-2 bg-[#f4ef0e] text-black px-6 py-3 rounded hover:bg-[#d6d20c] transition-colors disabled:opacity-50 font-medium"
             >
               <Save size={18} />
-              {isDeploying ? "Deploying..." : "Publish to GitHub"}
+              {isDeploying ? "Deploying..." : "Save"}
             </button>
           </div>
         </header>
