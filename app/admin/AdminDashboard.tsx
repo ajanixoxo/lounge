@@ -5,11 +5,31 @@ import { CopyPlus, Save, Trash2 } from "lucide-react";
 
 export default function AdminDashboard({ initialData }: { initialData: any }) {
   const [data, setData] = useState(initialData);
-  const [isSaving, setIsSaving] = useState(false);
+  const [isDeploying, setIsDeploying] = useState(false);
+  const [isSavingLocal, setIsSavingLocal] = useState(false);
   const [activeVenue, setActiveVenue] = useState<"lounge" | "restaurant">("lounge");
 
-  const saveChanges = async () => {
-    setIsSaving(true);
+  const saveLocally = async () => {
+    setIsSavingLocal(true);
+    try {
+      const res = await fetch("/api/save-local", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+      alert(result.message);
+    } catch (err: any) {
+      alert("Failed to save locally: " + err.message);
+    } finally {
+      setIsSavingLocal(false);
+    }
+  };
+
+  const publishToGithub = async () => {
+    if (!confirm("Are you ready to push this to GitHub and deploy?")) return;
+    setIsDeploying(true);
     try {
       const res = await fetch("/api/save-menu", {
         method: "POST",
@@ -20,9 +40,9 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
       if (!res.ok) throw new Error(result.error);
       alert(result.message);
     } catch (err: any) {
-      alert("Failed to save: " + err.message);
+      alert("Failed to publish: " + err.message);
     } finally {
-      setIsSaving(false);
+      setIsDeploying(false);
     }
   };
 
@@ -56,16 +76,27 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
         <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 border-b border-white/10 pb-6">
           <div>
             <h1 className="text-3xl font-playfair mb-2 text-[#f4ef0e]">Lounge Admin</h1>
-            <p className="text-white/60">Edit menu items and push to Git</p>
+            <p className="text-white/60">Edit menu items, preview locally, and push to Git</p>
           </div>
-          <button
-            onClick={saveChanges}
-            disabled={isSaving}
-            className="flex items-center gap-2 bg-[#f4ef0e] text-black px-6 py-3 rounded hover:bg-[#d6d20c] transition-colors disabled:opacity-50 font-medium"
-          >
-            <Save size={18} />
-            {isSaving ? "Saving & Deploying..." : "Publish Changes"}
-          </button>
+          <div className="flex gap-3">
+             <button
+              onClick={saveLocally}
+              disabled={isSavingLocal || isDeploying}
+              className="flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded hover:bg-white/20 transition-colors disabled:opacity-50 font-medium"
+            >
+              <Save size={18} />
+              {isSavingLocal ? "Saving..." : "Save Locally"}
+            </button>
+
+            <button
+              onClick={publishToGithub}
+              disabled={isSavingLocal || isDeploying}
+              className="flex items-center gap-2 bg-[#f4ef0e] text-black px-6 py-3 rounded hover:bg-[#d6d20c] transition-colors disabled:opacity-50 font-medium"
+            >
+              <Save size={18} />
+              {isDeploying ? "Deploying..." : "Publish to GitHub"}
+            </button>
+          </div>
         </header>
 
         <div className="flex gap-4 mb-8">

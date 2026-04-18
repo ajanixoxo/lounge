@@ -6,7 +6,9 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/layout/Hero';
 import { MenuSection } from '@/components/menu/MenuSection';
 import { Footer } from '@/components/layout/Footer';
-import { RESTAURANT_MENU } from '@/data/menu';
+import menuData from '@/data/menu.json';
+
+const RESTAURANT_MENU = menuData.restaurant;
 
 export default function RestaurantPage() {
   const { scrollYProgress } = useScroll();
