@@ -1,0 +1,656 @@
+{
+  "lounge": {
+    "title": "Lounge",
+    "backgroundTitle": "Lounge",
+    "categories": [
+      {
+        "title": "Cognac / Brandy",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-1-1", "name": "Hennessy XO (W/Gift Box)", "price": "850,000", "description": "Rich and full-bodied with deep oak and spice notes" },
+          { "id": "l-1-2", "name": "Hennessy VSOP", "price": "185,000", "description": "Smooth and balanced with hints of vanilla and fruit" },
+          { "id": "l-1-3", "name": "Hennessy VS", "price": "130,000", "description": "Bold and lively with a clean warm finish" },
+          { "id": "l-1-4", "name": "Martell Blue Swift", "price": "165,000", "description": "Smooth cognac finished in bourbon casks" },
+          { "id": "l-1-5", "name": "Martell VS Single Distillery", "price": "120,000", "description": "Light and fruity with a mellow finish" },
+          { "id": "l-1-6", "name": "Remy Martin XO Excellence", "price": "650,000", "description": "Luxurious blend with rich complexity and depth" },
+          { "id": "l-1-7", "name": "Remy Martin 1738", "price": "200,000", "description": "Velvety smooth with toasted oak notes" },
+          { "id": "l-1-8", "name": "Remy Martin VSOP", "price": "180,000", "description": "Elegant and smooth with balanced fruit tones" },
+          { "id": "l-1-9", "name": "Martell XO", "price": "700,000", "description": "Full-bodied with intense richness and depth" }
+        ]
+      },
+      {
+        "title": "Tequila",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-2-1", "name": "Clase Azul Reposado", "price": "450,000", "description": "Ultra-smooth premium tequila with sweet vanilla notes" },
+          { "id": "l-2-2", "name": "Casamigos Reposado", "price": "265,000", "description": "Rich and smooth with caramel and spice hints" },
+          { "id": "l-2-3", "name": "Casamigos Blanco", "price": "265,000", "description": "Crisp and clean with fresh citrus finish" },
+          { "id": "l-2-4", "name": "Don Julio 1942", "price": "670,000", "description": "Luxury tequila with refined smooth character" },
+          { "id": "l-2-5", "name": "Don Julio Reposado", "price": "290,000", "description": "Aged with warm oak and smooth finish" },
+          { "id": "l-2-6", "name": "Don Julio Blanco", "price": "290,000", "description": "Fresh and bright with pure agave taste" },
+          { "id": "l-2-7", "name": "Olmeca Gold", "price": "50,000", "description": "Smooth with a slightly sweet finish" },
+          { "id": "l-2-8", "name": "Olmeca Blanco", "price": "50,000", "description": "Light and crisp with citrus edge" },
+          { "id": "l-2-9", "name": "Tequila Sierra", "price": "45,000", "description": "Bold and simple with strong finish" },
+          { "id": "l-2-10", "name": "Patron", "price": "100,000", "description": "Premium smooth tequila with clean finish" }
+        ]
+      },
+      {
+        "title": "Whisky",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-3-1", "name": "Glenfiddich 18 Years", "price": "265,000", "description": "Rich and complex with oak, spice, and dried fruit" },
+          { "id": "l-3-2", "name": "Glenfiddich 15 Years", "price": "165,000", "description": "Smooth with honey and warm spice notes" },
+          { "id": "l-3-3", "name": "Glenfiddich 12 Years", "price": "125,000", "description": "Fresh and fruity with soft oak finish" },
+          { "id": "l-3-4", "name": "Jameson", "price": "60,000", "description": "Light and smooth with subtle sweetness" },
+          { "id": "l-3-5", "name": "Jameson Black Barrel", "price": "85,000", "description": "Deep and rich with toasted wood notes" },
+          { "id": "l-3-6", "name": "Jack Daniel's No.7", "price": "65,000", "description": "Bold with smoky vanilla finish" },
+          { "id": "l-3-7", "name": "Johnnie Walker Red Label", "price": "45,000", "description": "Spicy and vibrant with bold character" },
+          { "id": "l-3-8", "name": "Johnnie Walker Black Label", "price": "75,000", "description": "Smooth and smoky with balanced depth" },
+          { "id": "l-3-9", "name": "William Lawson's", "price": "30,000", "description": "Easy-drinking with soft malty finish" }
+        ]
+      },
+      {
+        "title": "Champagne & Sparkling",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-4-1", "name": "Moët & Chandon Nectar Rosé", "price": "260,000", "description": "Sweet and fruity with vibrant berry notes" },
+          { "id": "l-4-2", "name": "Moët & Chandon Imperial Brut", "price": "210,000", "description": "Crisp and elegant with refreshing bubbles" },
+          { "id": "l-4-3", "name": "Belaire Rosé Fantôme", "price": "160,000", "description": "Smooth rosé with rich sweet profile" },
+          { "id": "l-4-4", "name": "André Rosé", "price": "30,000", "description": "Light sparkling wine with fruity taste" },
+          { "id": "l-4-5", "name": "Martini Rosé", "price": "30,000", "description": "Soft and floral with gentle bubbles" }
+        ]
+      },
+      {
+        "title": "Liqueurs / Rum / Bitters",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-5-1", "name": "Jägermeister", "price": "50,000", "description": "Herbal liqueur with bold bittersweet taste" },
+          { "id": "l-5-2", "name": "Campari", "price": "50,000", "description": "Bitter and aromatic with citrus notes" },
+          { "id": "l-5-3", "name": "Baileys (Big)", "price": "45,000", "description": "Creamy liqueur with rich chocolate notes" },
+          { "id": "l-5-4", "name": "Baileys Strawberries", "price": "45,000", "description": "Sweet creamy liqueur with berry flavor" },
+          { "id": "l-5-5", "name": "Bacardi", "price": "40,000", "description": "Light rum with clean crisp finish" },
+          { "id": "l-5-6", "name": "Absolut Vodka", "price": "40,000", "description": "Smooth vodka with pure clean taste" },
+          { "id": "l-5-7", "name": "Gordon's Gin", "price": "20,000", "description": "Classic dry gin with herbal freshness" }
+        ]
+      },
+      {
+        "title": "Wine",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-6-1", "name": "Artesa Estate Pinot Noir 2017", "price": "60,000", "description": "Light-bodied red with soft berry notes" },
+          { "id": "l-6-2", "name": "Willamette Jigsaw Pinot Noir 2017", "price": "60,000", "description": "Silky and elegant with smooth finish" },
+          { "id": "l-6-3", "name": "Tre Ricci Cabernet Sauvignon", "price": "65,000", "description": "Bold red wine with rich deep flavor" },
+          { "id": "l-6-4", "name": "Woodside Pinot Noir 2013", "price": "70,000", "description": "Aged and smooth with complex taste" },
+          { "id": "l-6-5", "name": "Drostdy-Hof", "price": "30,000", "description": "Easy-drinking wine with soft finish" },
+          { "id": "l-6-6", "name": "Carlo Rossi", "price": "30,000", "description": "Light and fruity with balanced taste" },
+          { "id": "l-6-7", "name": "Four Cousins Red", "price": "30,000", "description": "Sweet and smooth red wine" },
+          { "id": "l-6-8", "name": "Four Cousins White", "price": "30,000", "description": "Fresh and sweet white wine" },
+          { "id": "l-6-9", "name": "Agor", "price": "30,000", "description": "Sweet wine with smooth profile" },
+          { "id": "l-6-10", "name": "Sweet Kiss", "price": "25,000", "description": "Light and fruity sweet wine" },
+          { "id": "l-6-11", "name": "Bluenun 24k Gold", "price": "50,000", "description": "Sparkling wine with delicate fruit notes" }
+        ]
+      },
+      {
+        "title": "Beer",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-7-1", "name": "Heineken Jar x2", "price": "5,000", "description": "Crisp lager with clean finish" },
+          { "id": "l-7-2", "name": "Budweiser Jar x2", "price": "5,000", "description": "Smooth refreshing lager" },
+          { "id": "l-7-3", "name": "Desperados Jar x2", "price": "4,000", "description": "Beer infused with tequila flavor" },
+          { "id": "l-7-4", "name": "Smirnoff Ice", "price": "2,000", "description": "Sweet citrus-flavored drink" },
+          { "id": "l-7-5", "name": "Orijin Beer Jar x2", "price": "4,000", "description": "Herbal beer with unique taste" },
+          { "id": "l-7-6", "name": "Guinness Smooth Jar x2", "price": "4,000", "description": "Creamy stout with rich flavor" },
+          { "id": "l-7-7", "name": "Guinness Smooth Big Jar x2", "price": "6,000", "description": "Creamy stout with rich flavor" },
+          { "id": "l-7-8", "name": "Orijin Bitters", "price": "2,000", "description": "Herbal bitters with sharp finish" }
+        ]
+      },
+      {
+        "title": "Soft Drinks / Mixers",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-8-1", "name": "Cranberry Juice", "price": "10,000", "description": "Fruit juice" },
+          { "id": "l-8-2", "name": "Power Horse", "price": "4,000", "description": "Energy drink" },
+          { "id": "l-8-3", "name": "Red Bull", "price": "4,000", "description": "Energy drink" },
+          { "id": "l-8-4", "name": "Monster", "price": "3,000", "description": "Energy drink" },
+          { "id": "l-8-5", "name": "Fresh Juice", "price": "6,000", "description": "Fresh fruit juice" },
+          { "id": "l-8-6", "name": "Hollandia", "price": "5,000", "description": "Yogurt drink" },
+          { "id": "l-8-7", "name": "Malt", "price": "1,500", "description": "Non-alcoholic malt drink" },
+          { "id": "l-8-8", "name": "Fayrouz", "price": "1,500", "description": "Non-alcoholic fruit malt" },
+          { "id": "l-8-9", "name": "Coke", "price": "1,500", "description": "Soft drink" },
+          { "id": "l-8-10", "name": "Sprite", "price": "1,500", "description": "Soft drink" },
+          { "id": "l-8-11", "name": "Water", "price": "1,000", "description": "Still water" }
+        ]
+      },
+      {
+        "title": "Signature Bar",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-ck-0", "name": "Smoking Old Fashioned", "price": "10,000", "description": "Classic whisky cocktail infused with aromatic smoke and bitters" },
+          { "id": "l-ck-1", "name": "Whiskey Sour", "price": "10,000", "description": "Smooth whisky balanced with fresh citrus and a hint of sweetness" },
+          { "id": "l-ck-2", "name": "Mint Julep", "price": "10,000", "description": "Refreshing blend of whisky, mint, and crushed ice" },
+          { "id": "l-ck-3", "name": "Moscow Mule", "price": "10,000", "description": "Crisp vodka cocktail with ginger beer and lime" },
+          { "id": "l-ck-4", "name": "Texas Tear", "price": "10,000", "description": "Bold and smoky house blend with a strong finish" },
+          { "id": "l-ck-5", "name": "White Russian", "price": "10,000", "description": "Creamy mix of vodka, coffee liqueur, and milk" },
+          { "id": "l-ck-6", "name": "Montana", "price": "10,000", "description": "Signature house cocktail with a smooth, refreshing twist" },
+          { "id": "l-ck-7", "name": "Long Island Iced Tea", "price": "10,000", "description": "Strong blend of multiple spirits" },
+          { "id": "l-ck-8", "name": "Sex on the Beach", "price": "10,000", "description": "Sweet fruity cocktail with citrus" },
+          { "id": "l-ck-9", "name": "Piña Colada", "price": "10,000", "description": "Creamy coconut and pineapple mix" },
+          { "id": "l-ck-10", "name": "Margarita", "price": "10,000", "description": "Tequila with fresh citrus kick" },
+          { "id": "l-ck-11", "name": "Tequila Sunrise", "price": "10,000", "description": "Sweet citrus with smooth finish" },
+          { "id": "l-ck-12", "name": "Rixos Peach Margarita", "price": "10,000", "description": "Peach-infused citrus cocktail" },
+          { "id": "l-ck-13", "name": "Rixos Mango Margarita", "price": "10,000", "description": "Mango twist on classic margarita" },
+          { "id": "l-ck-14", "name": "Strawberry Daiquiri", "price": "10,000", "description": "Fresh strawberry rum blend" },
+          { "id": "l-ck-15", "name": "Rixos Pineapple Daiquiri", "price": "10,000", "description": "Tropical pineapple cocktail" },
+          { "id": "l-ck-16", "name": "Rixos Mango Daiquiri", "price": "10,000", "description": "Sweet mango rum mix" },
+          { "id": "l-ck-17", "name": "Strawberry Mojito", "price": "10,000", "description": "Minty fresh with strawberry flavor" },
+          { "id": "l-ck-18", "name": "Electrified Long Island", "price": "10,000", "description": "Stronger version of classic mix" },
+          { "id": "l-ck-19", "name": "Rixos Alexandra", "price": "10,000", "description": "Signature house cocktail" },
+          { "id": "l-ck-20", "name": "Rixos Montana", "price": "10,000", "description": "Bold refreshing house mix" },
+          { "id": "l-ck-21", "name": "Rixos Cosmopolitan", "price": "10,000", "description": "Smooth citrus vodka cocktail" },
+          { "id": "l-ck-22", "name": "Rixos Brambles", "price": "10,000", "description": "Berry-infused refreshing drink" },
+          { "id": "l-ck-23", "name": "Rixos Lagoons", "price": "10,000", "description": "Cool tropical blend" },
+          { "id": "l-ck-24", "name": "Rixos BJ", "price": "10,000", "description": "Sweet creamy layered shot" }
+        ]
+      },
+      {
+        "title": "Mocktails",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-9-1", "name": "Rixos Wise Lady", "price": "8,000", "description": "Refreshing fruit blend" },
+          { "id": "l-9-2", "name": "Rixos Blue Slush", "price": "8,000", "description": "Icy sweet citrus drink" },
+          { "id": "l-9-3", "name": "Rixos Chapman", "price": "7,000", "description": "Classic Nigerian fruit mix" },
+          { "id": "l-9-4", "name": "Virgin Colada", "price": "8,000", "description": "Coconut and pineapple blend" },
+          { "id": "l-9-5", "name": "Virgin Daiquiri", "price": "8,000", "description": "Sweet frozen fruit mix" },
+          { "id": "l-9-6", "name": "Rixos HMG Juice", "price": "7,000", "description": "House mixed fruit juice" },
+          { "id": "l-9-7", "name": "Rixos Traffic Relief", "price": "8,000", "description": "Cool refreshing blend" },
+          { "id": "l-9-8", "name": "Rixos Mojito", "price": "8,000", "description": "Minty fresh citrus drink" },
+          { "id": "l-9-9", "name": "Rixos Shandy", "price": "8,000", "description": "Light fruity soft drink mix" },
+          { "id": "l-9-10", "name": "Rixos Milky Chapman", "price": "7,000", "description": "Creamy Chapman twist" },
+          { "id": "l-9-11", "name": "Rixos Twisted Chapman", "price": "8,000", "description": "Bold flavored Chapman mix" },
+          { "id": "l-9-12", "name": "Rixos Lemonade", "price": "8,000", "description": "Fresh citrus lemonade" },
+          { "id": "l-9-13", "name": "Rixos Bubble Gum", "price": "8,000", "description": "Sweet playful drink" }
+        ]
+      },
+      {
+        "title": "Milkshakes",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-10-1", "name": "Rixos Oreo Shake", "price": "12,000", "description": "Creamy chocolate cookie shake" },
+          { "id": "l-10-2", "name": "Rixos Strawberry Shake", "price": "12,000", "description": "Smooth sweet strawberry blend" },
+          { "id": "l-10-3", "name": "Rixos Chocolate Shake", "price": "12,000", "description": "Rich creamy chocolate drink" },
+          { "id": "l-10-4", "name": "Rixos Banana Vanilla Shake", "price": "12,000", "description": "Banana and vanilla mix" },
+          { "id": "l-10-5", "name": "Rixos Mixed Flavours", "price": "15,000", "description": "Blend of assorted flavors" }
+        ]
+      },
+      {
+        "title": "Smoothies",
+        "group": "Drinks",
+        "items": [
+          { "id": "l-11-1", "name": "Rixos Strawberry Delight", "price": "8,000", "description": "Fresh strawberry blend" },
+          { "id": "l-11-2", "name": "Rixos Crystal", "price": "8,000", "description": "Light refreshing fruit mix" },
+          { "id": "l-11-3", "name": "Rixos Fruitlicious", "price": "8,000", "description": "Mixed tropical fruits" },
+          { "id": "l-11-4", "name": "Rixos Pineapple", "price": "8,000", "description": "Fresh pineapple smoothie" },
+          { "id": "l-11-5", "name": "Rixos Enchanted", "price": "8,000", "description": "Sweet mixed fruit blend" },
+          { "id": "l-11-6", "name": "Rixos Dates Smoothie", "price": "8,000", "description": "Rich creamy date blend" },
+          { "id": "l-11-7", "name": "Nectar of the Gods", "price": "8,000", "description": "Premium fruit fusion" },
+          { "id": "l-11-8", "name": "Rixos Berry Smoothie", "price": "8,000", "description": "Mixed berry blend" },
+          { "id": "l-11-9", "name": "Rixos Strawman Smoothie", "price": "8,000", "description": "Strawberry and banana mix" }
+        ]
+      },
+      {
+        "title": "Shisha",
+        "group": "Shisha",
+        "items": [
+          { "id": "l-12-1", "name": "One Horse", "price": "12,000", "description": "Premium flavored shisha" }
+        ]
+      },
+      {
+        "title": "Rice",
+        "group": "Food",
+        "items": [
+          { "id": "l-13-1", "name": "Ofada Rice", "price": "12,000", "description": "Local rice served with assorted meats, egg, plantain and sauce" },
+          { "id": "l-13-2", "name": "Pineapple Fried Rice", "price": "6,000", "description": "Sweet and savory fried rice with pineapple twist" },
+          { "id": "l-13-3", "name": "Chinese Fried Rice", "price": "8,000", "description": "Classic stir-fried rice with vegetables and seasoning" },
+          { "id": "l-13-4", "name": "Seafood Fried Rice", "price": "15,700", "description": "Flavorful rice loaded with mixed seafood" },
+          { "id": "l-13-5", "name": "Coconut Seafood Rice", "price": "15,000", "description": "Creamy coconut-infused rice with premium seafood" },
+          { "id": "l-13-6", "name": "Jollof Rice (Chicken)", "price": "9,000", "description": "Smoky jollof rice served with chicken and coleslaw or plantain" },
+          { "id": "l-13-7", "name": "Jollof Rice (Beef)", "price": "8,000", "description": "Smoky rice served with beef and coleslaw or plantain" },
+          { "id": "l-13-8", "name": "Jollof Rice (Turkey)", "price": "11,000", "description": "Smoky rice served with turkey and coleslaw or plantain" },
+          { "id": "l-13-9", "name": "Native Rice", "price": "9,000", "description": "Traditional rice with plantain and egg" },
+          { "id": "l-13-10", "name": "Fried Rice (Chicken)", "price": "11,000", "description": "Fried rice with chicken and coleslaw or plantain" },
+          { "id": "l-13-11", "name": "Asun Rice", "price": "10,000", "description": "Spicy rice served with grilled asun" },
+          { "id": "l-13-12", "name": "White Rice & Sauce", "price": "5,000", "description": "Steamed white rice with spicy sauce" }
+        ]
+      },
+      {
+        "title": "Pastas",
+        "group": "Food",
+        "items": [
+          { "id": "l-14-1", "name": "Jollof Pasta", "price": "12,600", "description": "Pasta cooked in rich jollof sauce" },
+          { "id": "l-14-2", "name": "Asun Pasta", "price": "10,900", "description": "Spicy pasta with goat meat" },
+          { "id": "l-14-3", "name": "Native Pasta", "price": "7,800", "description": "Local-style seasoned pasta" },
+          { "id": "l-14-4", "name": "Stir-Fried Pasta", "price": "6,000", "description": "Lightly tossed with vegetables" },
+          { "id": "l-14-5", "name": "Egg Noodles", "price": "3,500", "description": "Noodles mixed with egg" },
+          { "id": "l-14-6", "name": "Veg Noodles", "price": "3,000", "description": "Vegetable stir-fried noodles" },
+          { "id": "l-14-7", "name": "Pepper Soup Noodles", "price": "5,500", "description": "Spicy broth noodles with goat meat" },
+          { "id": "l-14-8", "name": "Asun Noodles", "price": "5,000", "description": "Spicy noodles with goat meat" },
+          { "id": "l-14-9", "name": "Spaghetti Bolognese", "price": "19,700", "description": "Rich meat sauce tossed with classic spaghetti" },
+          { "id": "l-14-10", "name": "Chicken Alfredo Pasta", "price": "20,700", "description": "Creamy pasta with tender chicken and parmesan" },
+          { "id": "l-14-11", "name": "Mac and Cheese", "price": "8,800", "description": "Cheesy baked pasta with creamy texture" },
+          { "id": "l-14-12", "name": "Creamy Tomato Pasta with Crouton", "price": "10,000", "description": "Smooth tomato-based pasta topped with crunchy croutons" }
+        ]
+      },
+      {
+        "title": "Soups",
+        "group": "Food",
+        "items": [
+          { "id": "l-15-1", "name": "Afang", "price": "4,800", "description": "Rich vegetable soup with seafood" },
+          { "id": "l-15-2", "name": "Edikang Ikong", "price": "3,500", "description": "Nutritious vegetable soup" },
+          { "id": "l-15-3", "name": "Oha", "price": "3,500", "description": "Traditional eastern soup" },
+          { "id": "l-15-4", "name": "Fisherman", "price": "5,000", "description": "Seafood-rich spicy soup" },
+          { "id": "l-15-5", "name": "Bitter Leaf", "price": "4,500", "description": "Classic soup with bold taste" },
+          { "id": "l-15-6", "name": "Banga", "price": "3,600", "description": "Palm nut soup with rich flavor" },
+          { "id": "l-15-7", "name": "Ogbono", "price": "3,000", "description": "Draw soup with unique texture" },
+          { "id": "l-15-8", "name": "Efo Riro", "price": "3,500", "description": "Spinach stew with rich sauce" },
+          { "id": "l-15-9", "name": "Egusi", "price": "3,000", "description": "Melon seed soup with thick texture" }
+        ]
+      },
+      {
+        "title": "Swallows",
+        "group": "Food",
+        "items": [
+          { "id": "l-16-1", "name": "Eba", "price": "1,500", "description": "Garri swallow" },
+          { "id": "l-16-2", "name": "Yellow Eba", "price": "1,500", "description": "Garri swallow with rich color" },
+          { "id": "l-16-3", "name": "Semo", "price": "1,500", "description": "Smooth wheat swallow" },
+          { "id": "l-16-4", "name": "Poundo", "price": "1,500", "description": "Soft pounded yam alternative" },
+          { "id": "l-16-5", "name": "Plantain Swallow", "price": "1,500", "description": "Healthy plantain swallow" }
+        ]
+      },
+      {
+        "title": "Protein Bites",
+        "group": "Food",
+        "items": [
+          { "id": "l-17-1", "name": "Isi Ewu", "price": "15,000", "description": "Spicy goat head delicacy tossed in rich traditional sauce" },
+          { "id": "l-17-2", "name": "Nkwobi", "price": "8,000", "description": "Tender cow leg served in thick palm oil spice mix" },
+          { "id": "l-17-3", "name": "Peppered Beef", "price": "5,000", "description": "Juicy beef sautéed in hot pepper sauce" },
+          { "id": "l-17-4", "name": "Peppered Turkey", "price": "9,100", "description": "Grilled turkey tossed in spicy pepper mix" },
+          { "id": "l-17-5", "name": "Asun", "price": "7,000", "description": "Charcoal-grilled goat meat in fiery pepper sauce" },
+          { "id": "l-17-6", "name": "Peppered Chicken", "price": "6,900", "description": "Spicy sautéed chicken with rich flavor" },
+          { "id": "l-17-7", "name": "Peppered Gizzard", "price": "5,700", "description": "Stir-fried gizzard in bold pepper sauce" },
+          { "id": "l-17-8", "name": "Peppered Jumbo Snail", "price": "9,900", "description": "Large snail cooked in rich spicy sauce" },
+          { "id": "l-17-9", "name": "Peppered Goat Meat", "price": "8,000", "description": "Classic spicy goat meat with smoky flavor" }
+        ]
+      },
+      {
+        "title": "Pepper Soups",
+        "group": "Food",
+        "items": [
+          { "id": "l-18-1", "name": "Goat Meat Pepper Soup with Yam Cubes", "price": "8,000", "description": "Hot and spicy broth with tender goat meat and soft yam" },
+          { "id": "l-18-2", "name": "Small Catfish Pepper Soup", "price": "10,000", "description": "Fresh catfish in rich, aromatic pepper broth" },
+          { "id": "l-18-3", "name": "Big Catfish Pepper Soup", "price": "15,000", "description": "Fresh catfish in rich, aromatic pepper broth" },
+          { "id": "l-18-4", "name": "Assorted Pepper Soup", "price": "7,000", "description": "Mixed meats in a bold, spicy soup" },
+          { "id": "l-18-5", "name": "Ox Tail Pepper Soup", "price": "9,000", "description": "Rich and flavorful soup with tender oxtail" },
+          { "id": "l-18-6", "name": "Cow Leg Pepper Soup", "price": "8,000", "description": "Soft cow leg in deeply spiced broth" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Chicken",
+        "group": "Food",
+        "items": [
+          { "id": "l-19-1", "name": "Grilled Chicken and Chips", "price": "9,000", "description": "Juicy grilled chicken served with crispy fries" },
+          { "id": "l-19-2", "name": "Honey Glazed Chicken with Sour Hot Sauce", "price": "9,300", "description": "Sweet and spicy glazed chicken" },
+          { "id": "l-19-3", "name": "Beer-Canned Chicken with Honey Garlic Glaze", "price": "10,200", "description": "Juicy roasted chicken infused with beer and garlic" },
+          { "id": "l-19-4", "name": "Rixos Jerk Chicken with Spicy Jerk Sauce", "price": "11,000", "description": "Caribbean-style spicy grilled chicken" },
+          { "id": "l-19-5", "name": "Rixos Chef Recipe", "price": "12,300", "description": "House special chicken prepared with signature flavors" },
+          { "id": "l-19-6", "name": "Fries Alone", "price": "2,000", "description": "Crispy golden fries with a light salted finish" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Turkey",
+        "group": "Food",
+        "items": [
+          { "id": "l-20-1", "name": "Grilled Turkey and Fries", "price": "12,400", "description": "Well-seasoned turkey served with fries" },
+          { "id": "l-20-2", "name": "Cajun Turkey with Spiced Yam", "price": "12,800", "description": "Spicy Cajun turkey paired with seasoned yam" },
+          { "id": "l-20-3", "name": "Suya Turkey with Roasted Plantain and Vegetable Sauce", "price": "12,400", "description": "Suya-spiced turkey with Nigerian sides" },
+          { "id": "l-20-4", "name": "Rixos Jerk Turkey with Spicy Jerk Sauce", "price": "12,900", "description": "Bold jerk-seasoned turkey with heat" },
+          { "id": "l-20-5", "name": "Spiced Smokey Turkey with BBQ Sauce", "price": "12,600", "description": "Smoked turkey finished with rich BBQ glaze" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Fish",
+        "group": "Food",
+        "items": [
+          { "id": "l-21-1", "name": "Grilled Catfish", "price": "19,000", "description": "Whole catfish grilled and seasoned to perfection" },
+          { "id": "l-21-2", "name": "Grilled Croaker Fish", "price": "22,600", "description": "Fresh croaker fish with smoky grilled flavor" }
+        ]
+      },
+      {
+        "title": "Sharwama",
+        "group": "Food",
+        "items": [
+          { "id": "l-22-1", "name": "Chicken Shawarma", "price": "4,500", "description": "Grilled chicken wrapped with creamy sauce and veggies" },
+          { "id": "l-22-2", "name": "Beef Shawarma", "price": "4,500", "description": "Seasoned beef wrap with fresh vegetables and sauce" }
+        ]
+      }
+    ]
+  },
+  "restaurant": {
+    "title": "Restaurant",
+    "backgroundTitle": "Steakhouse",
+    "categories": [
+      {
+        "title": "Champagne & Sparkling",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-1-1", "name": "Moet & Chandon Nectar Rose", "price": "250,000", "description": "Sweet and fruity with vibrant berry notes" },
+          { "id": "r-1-2", "name": "Moet & Chandon Imperial Brut", "price": "230,000", "description": "Crisp and elegant with refreshing bubbles" },
+          { "id": "r-1-3", "name": "Andre Rose Sparkling Wine", "price": "40,000", "description": "Light sparkling wine with fruity taste" },
+          { "id": "r-1-4", "name": "Martini Rose", "price": "50,000", "description": "Soft and floral with gentle bubbles" },
+          { "id": "r-1-5", "name": "Belaire Rose Fantome", "price": "130,000", "description": "Smooth rosé with rich sweet profile" }
+        ]
+      },
+      {
+        "title": "Liqueurs / Rum / Bitters",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-2-1", "name": "Baileys (Big)", "price": "50,000", "description": "Creamy liqueur with rich chocolate notes" },
+          { "id": "r-2-2", "name": "Baileys Strawberries", "price": "50,000", "description": "Sweet creamy liqueur with berry flavor" }
+        ]
+      },
+      {
+        "title": "Wine",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-3-1", "name": "Artesa Estate Pinot Noir 2017", "price": "65,000", "description": "Light-bodied red with soft berry notes" },
+          { "id": "r-3-2", "name": "Willamette Jigsaw Pinot Noir 2017", "price": "65,000", "description": "Silky and elegant with smooth finish" },
+          { "id": "r-3-3", "name": "Tre Ricci Cabernet Sauvignon", "price": "70,000", "description": "Bold red wine with rich deep flavor" },
+          { "id": "r-3-4", "name": "Woodside Pinot Noir 2013", "price": "75,000", "description": "Aged and smooth with complex taste" },
+          { "id": "r-3-5", "name": "Drostdy Hof", "price": "35,000", "description": "Easy-drinking wine with soft finish" },
+          { "id": "r-3-6", "name": "Carlo Rossi", "price": "35,000", "description": "Light and fruity with balanced taste" },
+          { "id": "r-3-7", "name": "Four Cousins Red", "price": "35,000", "description": "Sweet and smooth red wine" },
+          { "id": "r-3-8", "name": "Four Cousins White", "price": "35,000", "description": "Fresh and sweet white wine" },
+          { "id": "r-3-9", "name": "Agor", "price": "35,000", "description": "Sweet wine with smooth profile" },
+          { "id": "r-3-10", "name": "Sweet Kiss", "price": "30,000", "description": "Light and fruity sweet wine" },
+          { "id": "r-3-11", "name": "Bluenun 24k Gold", "price": "60,000", "description": "Sparkling wine with delicate fruit notes" }
+        ]
+      },
+      {
+        "title": "Soft Drinks / Mixers",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-4-1", "name": "Cranberry Juice", "price": "12,000", "description": "Fruit juice" },
+          { "id": "r-4-2", "name": "Power Horse", "price": "4,000", "description": "Energy drink" },
+          { "id": "r-4-3", "name": "Red Bull", "price": "4,500", "description": "Energy drink" },
+          { "id": "r-4-4", "name": "Monster Drink", "price": "3,000", "description": "Energy drink" },
+          { "id": "r-4-5", "name": "Fresh Juice", "price": "8,000", "description": "Fresh fruit juice" },
+          { "id": "r-4-6", "name": "Hollandia", "price": "5,000", "description": "Yogurt drink" },
+          { "id": "r-4-7", "name": "Malt", "price": "2,000", "description": "Non-alcoholic malt drink" },
+          { "id": "r-4-8", "name": "Farouz", "price": "2,000", "description": "Non-alcoholic fruit malt" },
+          { "id": "r-4-9", "name": "Coke", "price": "2,000", "description": "Soft drink" },
+          { "id": "r-4-10", "name": "Sprite", "price": "2,000", "description": "Soft drink" },
+          { "id": "r-4-11", "name": "Water", "price": "1,500", "description": "Still water" }
+        ]
+      },
+      {
+        "title": "Signature Bar",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-ck-0", "name": "Smoking Old Fashioned", "price": "10,000", "description": "Classic whisky cocktail infused with aromatic smoke and bitters" },
+          { "id": "r-ck-1", "name": "Whiskey Sour", "price": "10,000", "description": "Smooth whisky balanced with fresh citrus and a hint of sweetness" },
+          { "id": "r-ck-2", "name": "Mint Julep", "price": "10,000", "description": "Refreshing blend of whisky, mint, and crushed ice" },
+          { "id": "r-ck-3", "name": "Moscow Mule", "price": "10,000", "description": "Crisp vodka cocktail with ginger beer and lime" },
+          { "id": "r-ck-4", "name": "Texas Tear", "price": "10,000", "description": "Bold and smoky house blend with a strong finish" },
+          { "id": "r-ck-5", "name": "White Russian", "price": "10,000", "description": "Creamy mix of vodka, coffee liqueur, and milk" },
+          { "id": "r-ck-6", "name": "Montana", "price": "10,000", "description": "Signature house cocktail with a smooth, refreshing twist" },
+          { "id": "r-ck-7", "name": "Long Island Iced Tea", "price": "10,000", "description": "Strong blend of multiple spirits" },
+          { "id": "r-ck-8", "name": "Sex on the Beach", "price": "10,000", "description": "Sweet fruity cocktail with citrus" },
+          { "id": "r-ck-9", "name": "Piña Colada", "price": "10,000", "description": "Creamy coconut and pineapple mix" },
+          { "id": "r-ck-10", "name": "Margarita", "price": "10,000", "description": "Tequila with fresh citrus kick" },
+          { "id": "r-ck-11", "name": "Tequila Sunrise", "price": "10,000", "description": "Sweet citrus with smooth finish" },
+          { "id": "r-ck-12", "name": "Rixos Peach Margarita", "price": "10,000", "description": "Peach-infused citrus cocktail" },
+          { "id": "r-ck-13", "name": "Rixos Mango Margarita", "price": "10,000", "description": "Mango twist on classic margarita" },
+          { "id": "r-ck-14", "name": "Strawberry Daiquiri", "price": "10,000", "description": "Fresh strawberry rum blend" },
+          { "id": "r-ck-15", "name": "Rixos Pineapple Daiquiri", "price": "10,000", "description": "Tropical pineapple cocktail" },
+          { "id": "r-ck-16", "name": "Rixos Mango Daiquiri", "price": "10,000", "description": "Sweet mango rum mix" },
+          { "id": "r-ck-17", "name": "Strawberry Mojito", "price": "10,000", "description": "Minty fresh with strawberry flavor" },
+          { "id": "r-ck-18", "name": "Electrified Long Island", "price": "10,000", "description": "Stronger version of classic mix" },
+          { "id": "r-ck-19", "name": "Rixos Alexandra", "price": "10,000", "description": "Signature house cocktail" },
+          { "id": "r-ck-20", "name": "Rixos Montana", "price": "10,000", "description": "Bold refreshing house mix" },
+          { "id": "r-ck-21", "name": "Rixos Cosmopolitan", "price": "10,000", "description": "Smooth citrus vodka cocktail" },
+          { "id": "r-ck-22", "name": "Rixos Brambles", "price": "10,000", "description": "Berry-infused refreshing drink" },
+          { "id": "r-ck-23", "name": "Rixos Lagoons", "price": "10,000", "description": "Cool tropical blend" },
+          { "id": "r-ck-24", "name": "Rixos BJ", "price": "10,000", "description": "Sweet creamy layered shot" }
+        ]
+      },
+      {
+        "title": "Mocktails",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-5-1", "name": "Rixos Wise Lady", "price": "8,000", "description": "Refreshing fruit blend" },
+          { "id": "r-5-2", "name": "Rixos Blue Slush", "price": "8,000", "description": "Icy sweet citrus drink" },
+          { "id": "r-5-3", "name": "Rixos Chapman", "price": "7,000", "description": "Classic Nigerian fruit mix" },
+          { "id": "r-5-4", "name": "Virgin Colada", "price": "8,000", "description": "Coconut and pineapple blend" },
+          { "id": "r-5-5", "name": "Virgin Daiquiri", "price": "8,000", "description": "Sweet frozen fruit mix" },
+          { "id": "r-5-6", "name": "Rixos HMG Juice", "price": "7,000", "description": "House mixed fruit juice" },
+          { "id": "r-5-7", "name": "Rixos Traffic Relief", "price": "8,000", "description": "Cool refreshing blend" },
+          { "id": "r-5-8", "name": "Rixos Mojito", "price": "8,000", "description": "Minty fresh citrus drink" },
+          { "id": "r-5-9", "name": "Rixos Shandy", "price": "8,000", "description": "Light fruity soft drink mix" },
+          { "id": "r-5-10", "name": "Rixos Milky Chapman", "price": "7,000", "description": "Creamy Chapman twist" },
+          { "id": "r-5-11", "name": "Rixos Twisted Chapman", "price": "8,000", "description": "Bold flavored Chapman mix" },
+          { "id": "r-5-12", "name": "Rixos Lemonade", "price": "8,000", "description": "Fresh citrus lemonade" },
+          { "id": "r-5-13", "name": "Rixos Bubble Gum", "price": "8,000", "description": "Sweet playful drink" }
+        ]
+      },
+      {
+        "title": "Milkshakes",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-6-1", "name": "Rixos Oreo Shake", "price": "12,000", "description": "Creamy chocolate cookie shake" },
+          { "id": "r-6-2", "name": "Rixos Strawberry Shake", "price": "12,000", "description": "Smooth sweet strawberry blend" },
+          { "id": "r-6-3", "name": "Rixos Chocolate Shake", "price": "12,000", "description": "Rich creamy chocolate drink" },
+          { "id": "r-6-4", "name": "Rixos Banana Vanilla Shake", "price": "12,000", "description": "Banana and vanilla mix" },
+          { "id": "r-6-5", "name": "Rixos Mixed Flavours", "price": "15,000", "description": "Blend of assorted flavors" }
+        ]
+      },
+      {
+        "title": "Smoothies",
+        "group": "Drinks",
+        "items": [
+          { "id": "r-7-1", "name": "Rixos Strawberry Delight", "price": "8,000", "description": "Fresh strawberry blend" },
+          { "id": "r-7-2", "name": "Rixos Crystal", "price": "8,000", "description": "Light refreshing fruit mix" },
+          { "id": "r-7-3", "name": "Rixos Fruitlicious", "price": "8,000", "description": "Mixed tropical fruits" },
+          { "id": "r-7-4", "name": "Rixos Pineapple", "price": "8,000", "description": "Fresh pineapple smoothie" },
+          { "id": "r-7-5", "name": "Rixos Enchanted", "price": "8,000", "description": "Sweet mixed fruit blend" },
+          { "id": "r-7-6", "name": "Rixos Dates Smoothie", "price": "8,000", "description": "Rich creamy date blend" },
+          { "id": "r-7-7", "name": "Nectar of the Gods", "price": "8,000", "description": "Premium fruit fusion" },
+          { "id": "r-7-8", "name": "Rixos Berry Smoothie", "price": "8,000", "description": "Mixed berry blend" },
+          { "id": "r-7-9", "name": "Rixos Strawman Smoothie", "price": "8,000", "description": "Strawberry and banana mix" }
+        ]
+      },
+      {
+        "title": "Starters / Finger Chops",
+        "group": "Food",
+        "items": [
+          { "id": "r-8-1", "name": "Buffalo Chicken Wings", "price": "7,900", "description": "Crispy wings tossed in spicy buffalo sauce" },
+          { "id": "r-8-2", "name": "Small Chops with Dip", "price": "7,000", "description": "Assorted bite-sized snacks served with dipping sauce" },
+          { "id": "r-8-3", "name": "Honey Glazed Wings with Fries", "price": "8,000", "description": "Sweet glazed wings served with crispy fries" },
+          { "id": "r-8-4", "name": "Prawn Cocktail", "price": "12,400", "description": "Fresh prawns served in creamy cocktail sauce" },
+          { "id": "r-8-5", "name": "Shrimps in Mayo", "price": "2,800", "description": "Juicy shrimps coated in rich mayonnaise" },
+          { "id": "r-8-6", "name": "Mini Burgers with Fries", "price": "5,100", "description": "Small juicy burgers served with fries" },
+          { "id": "r-8-7", "name": "Tempura Prawn", "price": "9,000", "description": "Lightly battered and crispy fried prawns" },
+          { "id": "r-8-8", "name": "Turkey Bites", "price": "9,700", "description": "Seasoned bite-sized turkey pieces" },
+          { "id": "r-8-9", "name": "Fries Alone", "price": "2,000", "description": "Crispy golden fries with a light salted finish" }
+        ]
+      },
+      {
+        "title": "Protein Bites",
+        "group": "Food",
+        "items": [
+          { "id": "r-9-1", "name": "Isi Ewu", "price": "15,000", "description": "Spicy goat head delicacy tossed in rich traditional sauce" },
+          { "id": "r-9-2", "name": "Nkwobi", "price": "8,000", "description": "Tender cow leg served in thick palm oil spice mix" },
+          { "id": "r-9-3", "name": "Peppered Beef", "price": "5,000", "description": "Juicy beef sautéed in hot pepper sauce" },
+          { "id": "r-9-4", "name": "Peppered Turkey", "price": "9,100", "description": "Grilled turkey tossed in spicy pepper mix" },
+          { "id": "r-9-5", "name": "Asun", "price": "7,000", "description": "Charcoal-grilled goat meat in fiery pepper sauce" },
+          { "id": "r-9-6", "name": "Peppered Chicken", "price": "6,900", "description": "Spicy sautéed chicken with rich flavor" },
+          { "id": "r-9-7", "name": "Peppered Gizzard", "price": "5,700", "description": "Stir-fried gizzard in bold pepper sauce" },
+          { "id": "r-9-8", "name": "Peppered Jumbo Snail", "price": "9,900", "description": "Large snail cooked in rich spicy sauce" },
+          { "id": "r-9-9", "name": "Peppered Goat Meat", "price": "8,000", "description": "Classic spicy goat meat with smoky flavor" }
+        ]
+      },
+      {
+        "title": "Pepper Soups",
+        "group": "Food",
+        "items": [
+          { "id": "r-10-1", "name": "Goat Meat Pepper Soup with Yam Cubes", "price": "8,000", "description": "Hot and spicy broth with tender goat meat and soft yam" },
+          { "id": "r-10-2", "name": "Small Catfish Pepper Soup", "price": "10,000", "description": "Fresh catfish in rich, aromatic pepper broth" },
+          { "id": "r-10-3", "name": "Big Catfish Pepper Soup", "price": "15,000", "description": "Fresh catfish in rich, aromatic pepper broth" },
+          { "id": "r-10-4", "name": "Assorted Pepper Soup", "price": "7,000", "description": "Mixed meats in a bold, spicy soup" },
+          { "id": "r-10-5", "name": "Ox Tail Pepper Soup", "price": "9,000", "description": "Rich and flavorful soup with tender oxtail" },
+          { "id": "r-10-6", "name": "Cow Leg Pepper Soup", "price": "8,000", "description": "Soft cow leg in deeply spiced broth" }
+        ]
+      },
+      {
+        "title": "Salads",
+        "group": "Food",
+        "items": [
+          { "id": "r-11-1", "name": "Caesar Salad", "price": "10,000", "description": "Fresh greens with creamy Caesar dressing" },
+          { "id": "r-11-2", "name": "Suya Carpaccio", "price": "8,000", "description": "Thinly sliced spiced beef with suya flavor" },
+          { "id": "r-11-3", "name": "Pasta Salad", "price": "6,000", "description": "Cold pasta mixed with vegetables" },
+          { "id": "r-11-4", "name": "Classic Pro-Coleslaw", "price": "3,000", "description": "Fresh cabbage salad with creamy dressing" },
+          { "id": "r-11-5", "name": "Chicken Salad", "price": "7,000", "description": "Grilled chicken with fresh vegetables" }
+        ]
+      },
+      {
+        "title": "Rice",
+        "group": "Food",
+        "items": [
+          { "id": "r-12-1", "name": "Ofada Rice", "price": "12,000", "description": "Local rice served with assorted meats, egg, plantain and sauce" },
+          { "id": "r-12-2", "name": "Pineapple Fried Rice", "price": "6,000", "description": "Sweet and savory fried rice with pineapple twist" },
+          { "id": "r-12-3", "name": "Chinese Fried Rice", "price": "8,000", "description": "Classic stir-fried rice with vegetables and seasoning" },
+          { "id": "r-12-4", "name": "Seafood Fried Rice", "price": "15,700", "description": "Flavorful rice loaded with mixed seafood" },
+          { "id": "r-12-5", "name": "Coconut Seafood Rice", "price": "15,000", "description": "Creamy coconut-infused rice with premium seafood" },
+          { "id": "r-12-6", "name": "Jollof Rice (Chicken)", "price": "9,000", "description": "Smoky jollof rice served with chicken and coleslaw or plantain" },
+          { "id": "r-12-7", "name": "Jollof Rice (Beef)", "price": "8,000", "description": "Smoky rice served with beef and coleslaw or plantain" },
+          { "id": "r-12-8", "name": "Jollof Rice (Turkey)", "price": "11,000", "description": "Smoky rice served with turkey and coleslaw or plantain" },
+          { "id": "r-12-9", "name": "Native Rice", "price": "9,000", "description": "Traditional rice with plantain and egg" },
+          { "id": "r-12-10", "name": "Fried Rice (Chicken)", "price": "11,000", "description": "Fried rice with chicken and coleslaw or plantain" },
+          { "id": "r-12-11", "name": "Asun Rice", "price": "10,000", "description": "Spicy rice served with grilled asun" },
+          { "id": "r-12-12", "name": "White Rice & Sauce", "price": "5,000", "description": "Steamed white rice with spicy sauce" }
+        ]
+      },
+      {
+        "title": "Pastas",
+        "group": "Food",
+        "items": [
+          { "id": "r-13-1", "name": "Jollof Pasta", "price": "12,600", "description": "Pasta cooked in rich jollof sauce" },
+          { "id": "r-13-2", "name": "Asun Pasta", "price": "10,900", "description": "Spicy pasta with goat meat" },
+          { "id": "r-13-3", "name": "Native Pasta", "price": "7,800", "description": "Local-style seasoned pasta" },
+          { "id": "r-13-4", "name": "Stir-Fried Pasta", "price": "6,000", "description": "Lightly tossed with vegetables" },
+          { "id": "r-13-5", "name": "Egg Noodles", "price": "3,500", "description": "Noodles mixed with egg" },
+          { "id": "r-13-6", "name": "Veg Noodles", "price": "3,000", "description": "Vegetable stir-fried noodles" },
+          { "id": "r-13-7", "name": "Pepper Soup Noodles", "price": "5,500", "description": "Spicy broth noodles with goat meat" },
+          { "id": "r-13-8", "name": "Asun Noodles", "price": "5,000", "description": "Spicy noodles with goat meat" },
+          { "id": "r-13-9", "name": "Spaghetti Bolognese", "price": "19,700", "description": "Rich meat sauce tossed with classic spaghetti" },
+          { "id": "r-13-10", "name": "Chicken Alfredo Pasta", "price": "20,700", "description": "Creamy pasta with tender chicken and parmesan" },
+          { "id": "r-13-11", "name": "Mac and Cheese", "price": "8,800", "description": "Cheesy baked pasta with creamy texture" },
+          { "id": "r-13-12", "name": "Creamy Tomato Pasta with Crouton", "price": "10,000", "description": "Smooth tomato-based pasta topped with crunchy croutons" }
+        ]
+      },
+      {
+        "title": "Steak",
+        "group": "Food",
+        "items": [
+          { "id": "r-14-1", "name": "Tomahawk Steak (410g)", "price": "38,700", "description": "Large bone-in steak with rich, juicy flavor" },
+          { "id": "r-14-2", "name": "Rixos Ribeye Steak (338g)", "price": "30,700", "description": "Tender ribeye cut with deep marbling and taste" },
+          { "id": "r-14-3", "name": "T-Bone Steak (350g)", "price": "30,700", "description": "Classic cut combining strip and tenderloin" },
+          { "id": "r-14-4", "name": "Smoked Pulled Beef Shank (2kg)", "price": "66,500", "description": "Slow-cooked beef, smoky and fall-off-the-bone tender" }
+        ]
+      },
+      {
+        "title": "Soups",
+        "group": "Food",
+        "items": [
+          { "id": "r-15-1", "name": "Afang", "price": "4,800", "description": "Rich vegetable soup with seafood" },
+          { "id": "r-15-2", "name": "Edikang Ikong", "price": "3,500", "description": "Nutritious vegetable soup" },
+          { "id": "r-15-3", "name": "Oha", "price": "3,500", "description": "Traditional eastern soup" },
+          { "id": "r-15-4", "name": "Fisherman", "price": "5,000", "description": "Seafood-rich spicy soup" },
+          { "id": "r-15-5", "name": "Bitter Leaf", "price": "4,500", "description": "Classic soup with bold taste" },
+          { "id": "r-15-6", "name": "Banga", "price": "3,600", "description": "Palm nut soup with rich flavor" },
+          { "id": "r-15-7", "name": "Ogbono", "price": "3,000", "description": "Draw soup with unique texture" },
+          { "id": "r-15-8", "name": "Efo Riro", "price": "3,500", "description": "Spinach stew with rich sauce" },
+          { "id": "r-15-9", "name": "Egusi", "price": "3,000", "description": "Melon seed soup with thick texture" }
+        ]
+      },
+      {
+        "title": "Swallows",
+        "group": "Food",
+        "items": [
+          { "id": "r-16-1", "name": "Eba", "price": "1,500", "description": "Garri swallow" },
+          { "id": "r-16-2", "name": "Yellow Eba", "price": "1,500", "description": "Garri swallow with rich color" },
+          { "id": "r-16-3", "name": "Semo", "price": "1,500", "description": "Smooth wheat swallow" },
+          { "id": "r-16-4", "name": "Poundo", "price": "1,500", "description": "Soft pounded yam alternative" },
+          { "id": "r-16-5", "name": "Plantain Swallow", "price": "1,500", "description": "Healthy plantain swallow" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Chicken",
+        "group": "Food",
+        "items": [
+          { "id": "r-17-1", "name": "Grilled Chicken and Chips", "price": "9,000", "description": "Juicy grilled chicken served with crispy fries" },
+          { "id": "r-17-2", "name": "Honey Glazed Chicken with Sour Hot Sauce", "price": "9,300", "description": "Sweet and spicy glazed chicken" },
+          { "id": "r-17-3", "name": "Beer-Canned Chicken with Honey Garlic Glaze", "price": "10,200", "description": "Juicy roasted chicken infused with beer and garlic" },
+          { "id": "r-17-4", "name": "Rixos Jerk Chicken with Spicy Jerk Sauce", "price": "11,000", "description": "Caribbean-style spicy grilled chicken" },
+          { "id": "r-17-5", "name": "Rixos Chef Recipe", "price": "12,300", "description": "House special chicken prepared with signature flavors" },
+          { "id": "r-17-6", "name": "Fries Alone", "price": "2,000", "description": "Crispy golden fries with a light salted finish" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Turkey",
+        "group": "Food",
+        "items": [
+          { "id": "r-18-1", "name": "Grilled Turkey and Fries", "price": "12,400", "description": "Well-seasoned turkey served with fries" },
+          { "id": "r-18-2", "name": "Cajun Turkey with Spiced Yam", "price": "12,800", "description": "Spicy Cajun turkey paired with seasoned yam" },
+          { "id": "r-18-3", "name": "Suya Turkey with Roasted Plantain and Vegetable Sauce", "price": "12,400", "description": "Suya-spiced turkey with Nigerian sides" },
+          { "id": "r-18-4", "name": "Rixos Jerk Turkey with Spicy Jerk Sauce", "price": "12,900", "description": "Bold jerk-seasoned turkey with heat" },
+          { "id": "r-18-5", "name": "Spiced Smokey Turkey with BBQ Sauce", "price": "12,600", "description": "Smoked turkey finished with rich BBQ glaze" }
+        ]
+      },
+      {
+        "title": "Classic BBQ Spot Fish",
+        "group": "Food",
+        "items": [
+          { "id": "r-19-1", "name": "Grilled Catfish", "price": "19,000", "description": "Whole catfish grilled and seasoned to perfection" },
+          { "id": "r-19-2", "name": "Grilled Croaker Fish", "price": "22,600", "description": "Fresh croaker fish with smoky grilled flavor" }
+        ]
+      },
+      {
+        "title": "Seafood",
+        "group": "Food",
+        "items": [
+          { "id": "r-20-1", "name": "Smoked Cajun Tiger Prawns with Dirty Fries", "price": "21,700", "description": "Large prawns with bold Cajun spices and fries" },
+          { "id": "r-20-2", "name": "Grilled Crocker Fish with Yam Fries", "price": "15,700", "description": "Fresh fish grilled and served with yam fries" },
+          { "id": "r-20-3", "name": "Grilled Catfish with Sweet Potatoes and Plantain", "price": "15,400", "description": "Well-seasoned catfish with hearty sides" },
+          { "id": "r-20-4", "name": "Grilled Lemon Tilapia", "price": "20,400", "description": "Light and zesty grilled tilapia with lemon flavor" }
+        ]
+      },
+      {
+        "title": "Platters",
+        "group": "Food",
+        "items": [
+          { "id": "r-21-1", "name": "Rixos Premium Platter (Serves 15)", "price": "176,000", "description": "Crocodile chunks, whole chunked guinea fowl, asun, 5 chunked turkeys, special fried rice, bole with vegetable sauce, yam fries, egg coleslaw, apple pie" },
+          { "id": "r-21-2", "name": "Rixos Platter (Serves 10)", "price": "128,800", "description": "Whole grilled suya rabbit, asun, whole beer can chicken, 3 turkeys, coconut seafood rice, fried plantain, fried potatoes, fruit tart" }
+        ]
+      },
+      {
+        "title": "Desserts",
+        "group": "Food",
+        "items": [
+          { "id": "r-22-1", "name": "Apple Pie", "price": "7,300", "description": "Classic baked pie with sweet apple filling" },
+          { "id": "r-22-2", "name": "Fruit Tart", "price": "8,000", "description": "Buttery crust filled with fresh fruits" },
+          { "id": "r-22-3", "name": "Death by Chocolate Cake", "price": "10,300", "description": "Rich and indulgent chocolate layered cake" },
+          { "id": "r-22-4", "name": "Flan", "price": "13,700", "description": "Smooth creamy custard with caramel glaze" }
+        ]
+      }
+    ]
+  }
+}
