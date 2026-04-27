@@ -1,13 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CopyPlus, Save, Trash2 } from "lucide-react";
 
 export default function AdminDashboard({ initialData }: { initialData: any }) {
   const [data, setData] = useState(initialData);
+  const [user, setUser] = useState<{ username?: string } | null>(null);
   const [isDeploying, setIsDeploying] = useState(false);
   const [isSavingLocal, setIsSavingLocal] = useState(false);
   const [activeVenue, setActiveVenue] = useState<"lounge" | "restaurant">("lounge");
+
+  useEffect(() => {
+    let mounted = true;
+    fetch('/api/auth/me')
+      .then((r) => r.json())
+      .then((j) => { if (mounted && j?.authenticated) setUser(j.user); })
+      .catch(() => {})
+    return () => { mounted = false };
+  }, []);
 
   const saveLocally = async () => {
     setIsSavingLocal(true);
@@ -78,7 +88,8 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
             <h1 className="text-3xl font-playfair mb-2 text-[#f4ef0e]">Lounge Admin</h1>
             <p className="text-white/60">Edit menu items</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center">
+            {user && <div className="text-sm text-white/60 mr-2">Signed in as <span className="text-white">{user.username}</span></div>}
             {process.env.NODE_ENV === "development" && (
               <button
                 onClick={saveLocally}
@@ -98,8 +109,21 @@ export default function AdminDashboard({ initialData }: { initialData: any }) {
               <Save size={18} />
               {isDeploying ? "Deploying..." : "Save"}
             </button>
+            <button
+              onClick={async () => {
+                await fetch('/api/auth/logout', { method: 'POST' });
+                window.location.reload();
+              }}
+              className="flex items-center gap-2 bg-white/10 text-white border border-white/20 px-4 py-2 rounded hover:bg-white/20 transition-colors disabled:opacity-50 font-medium"
+            >
+              Logout
+            </button>
           </div>
         </header>
+
+        {/* get user info on mount */}
+        
+        
 
         <div className="flex gap-4 mb-8">
           {(["lounge", "restaurant"] as const).map((venue) => (
