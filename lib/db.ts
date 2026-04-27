@@ -8,7 +8,9 @@ let sqlJsModule: any = null;
 async function getSqlJs() {
   if (!sqlJsModule) {
     const wasmPath = path.join(process.cwd(), 'node_modules/sql.js/dist/sql-wasm.wasm');
-    const wasmBinary = fs.readFileSync(wasmPath);
+    const wasmBuffer = fs.readFileSync(wasmPath);
+    // Convert Buffer to Uint8Array for sql.js
+    const wasmBinary = new Uint8Array(wasmBuffer) as any;
     sqlJsModule = await initSqlJs({
       wasmBinary: wasmBinary
     });
