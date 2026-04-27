@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { db } from '@/lib/db';
+import { getDb } from '@/lib/db';
 import cookie from 'cookie';
 
 const COOKIE_NAME = 'rl_session';
@@ -10,6 +10,7 @@ export async function POST(req: Request) {
     const parsed = cookie.parse(raw || '');
     const token = parsed[COOKIE_NAME];
     if (token) {
+      const db = await getDb();
       db.prepare('DELETE FROM sessions WHERE token = ?').run(token);
     }
     const res = NextResponse.json({ ok: true });

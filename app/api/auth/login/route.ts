@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { db } from '@/lib/db';
+import { getDb } from '@/lib/db';
 import bcrypt from 'bcryptjs';
 import crypto from 'crypto';
 
@@ -10,6 +10,7 @@ export async function POST(req: Request) {
     const { username, password } = await req.json();
     if (!username || !password) return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
 
+    const db = await getDb();
     const user = db.prepare('SELECT * FROM users WHERE username = ?').get(username);
     if (!user) return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
 
@@ -19,12 +20,25 @@ export async function POST(req: Request) {
     const token = crypto.randomBytes(32).toString('hex');
     const expiresAt = new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toISOString(); // 7 days
 
+    console.log('[LOGIN] Creating session:', { token: token.substring(0, 10) + '...', userId: user.id, expiresAt });
     db.prepare('INSERT INTO sessions (token, user_id, expires_at) VALUES (?, ?, ?)').run(token, user.id, expiresAt);
+    
+    // Verify session was created
+    const session = db.prepare('SELECT * FROM sessions WHERE token = ?').get(token);
+    console.log('[LOGIN] Session verified:', !!session);
 
     const res = NextResponse.json({ ok: true });
-    res.cookies.set(COOKIE_NAME, token, { httpOnly: true, path: '/', maxAge: 60 * 60 * 24 * 7 });
+    res.cookies.set(COOKIE_NAME, token, { 
+      httpOnly: true, 
+      secure: false, // Set to false for local dev (http)
+      path: '/', 
+      maxAge: 60 * 60 * 24 * 7,
+      sameSite: 'lax'
+    });
+    console.log('[LOGIN] Response headers:', res.headers.getSetCookie());
     return res;
   } catch (err: any) {
+    console.error('[LOGIN] Error:', err.message);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }

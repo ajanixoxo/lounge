@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { db } from '@/lib/db';
+import { getDb } from '@/lib/db';
 import bcrypt from 'bcryptjs';
 
 export async function POST(req: Request) {
@@ -9,6 +9,7 @@ export async function POST(req: Request) {
     if (!username || !password) return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
 
     const hashed = bcrypt.hashSync(password, 10);
+    const db = await getDb();
     const stmt = db.prepare('INSERT INTO users (username, password) VALUES (?, ?)');
     const info = stmt.run(username, hashed);
     return NextResponse.json({ ok: true, userId: info.lastInsertRowid });
