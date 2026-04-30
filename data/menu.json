@@ -9,7 +9,7 @@
         "items": [
           {
             "id": "l-1-1",
-            "name": "Hennessy XO ",
+            "name": "Hennessy",
             "price": "850,000",
             "description": "Rich and full-bodied with deep oak and spice notes"
           },
@@ -1298,34 +1298,10 @@
         "group": "Drinks",
         "items": [
           {
-            "id": "r-1-1",
-            "name": "Moet & Chandon Nectar Rose",
-            "price": "250,000",
-            "description": "Sweet and fruity with vibrant berry notes"
-          },
-          {
-            "id": "r-1-2",
-            "name": "Moet & Chandon Imperial Brut",
-            "price": "230,000",
-            "description": "Crisp and elegant with refreshing bubbles"
-          },
-          {
-            "id": "r-1-3",
-            "name": "Andre Rose Sparkling Wine",
-            "price": "40,000",
-            "description": "Light sparkling wine with fruity taste"
-          },
-          {
             "id": "r-1-4",
             "name": "Martini Rose",
             "price": "50,000",
-            "description": "Soft and floral with gentle bubbles"
-          },
-          {
-            "id": "r-1-5",
-            "name": "Belaire Rose Fantome",
-            "price": "130,000",
-            "description": "Smooth rosé with rich sweet profile"
+            "description": "Soft and floral with gentlebubbles"
           }
         ]
       },
