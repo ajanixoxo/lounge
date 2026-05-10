@@ -2064,6 +2064,12 @@
             "name": "White Rice & Sauce",
             "price": "5,000",
             "description": "Steamed white rice with spicy sauce"
+          },
+          {
+            "id": "r-new-j3qgiz",
+            "name": "Fried Rice (Turkey)",
+            "price": "13,500",
+            "description": "Fried rice with Turkey and coleslaw or plantain"
           }
         ]
       },
