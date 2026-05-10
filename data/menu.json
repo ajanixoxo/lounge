@@ -1923,14 +1923,8 @@
           },
           {
             "id": "r-10-2",
-            "name": "Small Catfish Pepper Soup",
+            "name": "Catfish Pepper Soup",
             "price": "10,000",
-            "description": "Fresh catfish in rich, aromatic pepper broth"
-          },
-          {
-            "id": "r-10-3",
-            "name": "Big Catfish Pepper Soup",
-            "price": "15,000",
             "description": "Fresh catfish in rich, aromatic pepper broth"
           },
           {
@@ -2362,7 +2356,7 @@
           {
             "id": "r-19-1",
             "name": "Grilled Catfish",
-            "price": "19,000",
+            "price": "16,000",
             "description": "Whole catfish grilled and seasoned to perfection"
           },
           {
